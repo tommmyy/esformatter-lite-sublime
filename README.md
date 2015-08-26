@@ -1,7 +1,9 @@
 SublimeText3-EsformatterLite
 =======================
 
-Backup File plugin for Sublime Text 3
+*Work in progress.*
+
+Backup File plugin for Sublime Text 3.
 
 
 ## Installation
@@ -14,10 +16,10 @@ Backup File plugin for Sublime Text 3
 
 Preferences > Key bindings - User
 
-´´´
+Â´Â´Â´
 [{
     "keys": ["ctrl+shift+f"],
     "command": "esformatter_lite"
   }
 ]
-´´´
+Â´Â´Â´
