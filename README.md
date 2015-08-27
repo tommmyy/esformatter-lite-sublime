@@ -2,10 +2,12 @@
 
 *Work in progress.*
 
-Backup File plugin for Sublime Text 3.
+Plugin adding 'esfomatter_lite' command to Sublime Text editor for formatting code by (esformatter)[https://github.com/millermedeiros/esformatter].
 
 
 ## Installation
+
+ * Install (Esfomatter)[https://github.com/millermedeiros/esformatter#cli] to your machine
 
  * Copy "EsformatterLite.py" file to ~/.config/sublime-text-3/Packages/User/
 
@@ -15,10 +17,10 @@ Backup File plugin for Sublime Text 3.
 
 Preferences > Key bindings - User
 
-`
+```json
 [{
     "keys": ["ctrl+shift+f"],
     "command": "esformatter_lite"
   }
 ]
-`
+```
