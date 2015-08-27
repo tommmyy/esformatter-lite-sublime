@@ -24,7 +24,12 @@ class EsformatterLiteCommand(sublime_plugin.TextCommand):
 			stdin=subprocess.PIPE,
 			universal_newlines=True)
 		p.stdin.write(selection)
-		formatted = p.communicate()[0];
-		p.stdin.close()
+		formatted, errors = p.communicate();
 
-		view.replace(edit, region, formatted)
+		if(errors):
+			print (errors)
+
+		p.stdin.close()
+		if(formatted and formatted != ''):
+			view.replace(edit, region, formatted)
+			print ("Formatted by Esformatter Lite Plugin")
